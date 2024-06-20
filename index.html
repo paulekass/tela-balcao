@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabela de Solicitação de Senhas</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body  {
+      background-color: #3d7283;
+      color: #fff;
+      text-align: center; /* Centraliza todos os textos */
+    }
+    #segunda-linha {
+      background-color: #82c4ed;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    #col-cidade {
+      color: #fff;
+      font-size: 40px;
+    }
+    #col-cidade .cidade {
+      font-size: 30px !important;
+    }
+    #icone-temperatura svg {
+      width: 100px;
+      height: 100px;
+    }
+    #informacao-data .row {
+      font-size: 40px;
+    }
+    .linha-informacoes{
+      padding: 5px;
+    }
+    .btn-balcao{
+      background-color: #b1d08e;
+      width: 75px;
+      border-radius: 10px;
+    }
+    .btn-tipo-atendimento{
+      background-color: white;
+      width: 300px;
+    }
+    .btn-senha{
+      background-color: #4177b6;
+      border: #fff 7px solid;
+      border-radius: 35px;
+    }
+    .btn-grup {
+      height: 60px;
+      margin: 5px;
+      display: flex;
+      align-items: stretch;
+    }
+    .btn-group2 {
+      height: 60px !important;
+      color: white !important;
+    }
+    .btn-group2 .btn {
+      color: white !important;
+    }
+    .btn-titulo-balcao{
+      text-align: right;
+    }
+    .container-fluid{
+      margin-top: 5px;
+    }
+    img {
+      display: block; /* Faz a imagem ser exibida como bloco */
+      margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-8">
+        <div class="row">
+          <video controls width="100%">
+            <source src="lancamento.mp4" type="video/mp4">
+            <p>
+              Vídeo indisponível
+              <a href="lancamento.mp4">Link do vídeo</a>
+            </p>
+          </video>
+        </div>
+        <div class="row">
+          <div class="col" id="col-cidade">
+            <div class="row cidade">Samambaia sul</div>
+            <div class="row">28°</div>
+          </div>
+          <div class="col" id="icone-temperatura">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16">
+              <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.5 3.5 0 0 1 7 8m4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z"/>
+              <path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708zm1.734 3.374a2 2 0 1 1 3.296 2.198q.3.423.516.898a3 3 0 1 0-4.84-3.225q.529.017 1.028.129m4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377M14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"/>
+            </svg>
+          </div>
+          <div class="col" id="informacao-data">
+            <div class="row">19/06/2024</div>
+            <div class="row">13:19</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        
+        <img src="Lovepik_com-401536873-astronaut-traveling-in-space.png" width="200px">
+      
+
+        <div class="btn-grup btn-group2" role="grup" aria-label="basic example">
+          <button type="button" class="btn">Senha</button>
+          <button type="button" class="btn "><div class="row">Atendimento ao municipio</div> </button>
+          <button type="button" class="btn">balcao</button>
+        </div>
+
+        <div class="btn-grup" role="grup" aria-label="basic example">
+          <button type="button" class="btn-primary btn-senha">A 023</button>
+          <button type="button" class="btn btn-tipo-atendimento"><div class="row">     <div> Atendimento ao Paulo</div> </div></button>
+          <button type="button" class="btn-primary btn-balcao">2</button>
+
+
+        </div>
+
+        <div class="btn-grup" role="group" aria-label="basic example">
+          <button type="button" class="btn-primary btn-senha">A 023</button>
+          <button type="button" class="btn btn-tipo-atendimento">
+            <div class="row"> <div> Atendimento ao prioritario</div></div>
+            
+          </button>
+          <button type="button" class="btn-primary btn-balcao">4</button>
+        </div>
+        
+        <div class="btn-grup" role="group" aria-label="basic example">
+          <button type="button" class="btn-primary btn-senha">A 023</button>
+          <button type="button" class="btn btn-tipo-atendimento">
+            <div class="row"> <div>Atendimento normal</div></div>
+          </button>
+          <button type="button" class="btn-primary btn-balcao">1</button>
+        </div>
+        <div class="btn-grup" role="group" aria-label="basic example">
+          <button type="button" class="btn-primary btn-senha">A 023</button>
+          <button type="button" class="btn btn-tipo-atendimento">
+            <div class="row"><div>Atendimento ao prioritario</div></div>
+            
+          </button>
+          <button type="button" class="btn-primary btn-balcao">3</button>
+        </div>
+        <!-- Conteúdo adicional pode ser adicionado aqui -->
+      </div>
+    </div>
+    <div class="row" id="segunda-linha"> 
+      <marquee>Paulo Neto</marquee>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
